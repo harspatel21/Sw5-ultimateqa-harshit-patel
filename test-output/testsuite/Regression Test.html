@@ -1,0 +1,108 @@
+<html>
+<head>
+<title>TestNG:  Regression Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Regression Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>2/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Tue Dec 13 22:27:59 GMT 2022</td>
+</tr>
+<tr><td>Total time:</td><td>20 seconds (20364 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td>regression </td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.ultimateqa.courses.testsuite.LoginPageTest.userShouldNavigateToLoginPageSuccessfully()'><b>userShouldNavigateToLoginPageSuccessfully</b><br>Test class: com.ultimateqa.courses.testsuite.LoginPageTest<br/>
+<a href="#Output-1061018585" onClick='toggleBox("Output-1061018585", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1061018585" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1061018585">
+Clicking on Signing Link [[ChromeDriver: chrome on WINDOWS (8013356039da526637c2d14bf0b0ac0b)] -> xpath: //a[@href='/users/sign_in']]<br/>
+Verify Welcome Back Text [[ChromeDriver: chrome on WINDOWS (8013356039da526637c2d14bf0b0ac0b)] -> xpath: //h2[@class='page__heading']]<br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>com.ultimateqa.courses.testsuite.LoginPageTest@43a0cee9</td></tr>
+<tr>
+<td title='com.ultimateqa.courses.testsuite.LoginPageTest.verifyTheErrorMessage()'><b>verifyTheErrorMessage</b><br>Test class: com.ultimateqa.courses.testsuite.LoginPageTest<br/>
+<a href="#Output-1232433403" onClick='toggleBox("Output-1232433403", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1232433403" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1232433403">
+Clicking on Signing Link [[ChromeDriver: chrome on WINDOWS (bfb2cecd7977ad899962750449c22c10)] -> xpath: //a[@href='/users/sign_in']]<br/>
+Entering Test123545@Gmail.com User Name [[ChromeDriver: chrome on WINDOWS (bfb2cecd7977ad899962750449c22c10)] -> id: user[email]]<br/>
+Entering [[ChromeDriver: chrome on WINDOWS (bfb2cecd7977ad899962750449c22c10)] -> id: user[password]] Password  [[ChromeDriver: chrome on WINDOWS (bfb2cecd7977ad899962750449c22c10)] -> id: user[password]]<br/>
+Clicking on Signin Button [[ChromeDriver: chrome on WINDOWS (bfb2cecd7977ad899962750449c22c10)] -> xpath: //button[@type='submit']]<br/>
+Verify Invalid Crendetial Message [[ChromeDriver: chrome on WINDOWS (bfb2cecd7977ad899962750449c22c10)] -> xpath: //li[contains(text(),'Invalid email or password.')]]<br/>
+</div>
+</td>
+<td></td>
+<td>3</td>
+<td>com.ultimateqa.courses.testsuite.LoginPageTest@43a0cee9</td></tr>
+</table><p>
+</body>
+</html>
